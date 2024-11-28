@@ -1,0 +1,98 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte padrão e cor de fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Texto escuro */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2e8b57; /* Cor verde-escuro para o título */
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #4682b4; /* Cor azul suave para o subtítulo */
+}
+
+/* Layout para o conteúdo */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para a tabela */
+.table-container {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff; /* Cor de fundo branca para a tabela */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela com cor de fundo verde */
+th {
+    background-color: #3cb371; /* Verde médio */
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternando cores de fundo nas linhas da tabela */
+tr:nth-child(even) {
+    background-color: #e0ffff; /* Azul claro */
+}
+
+tr:nth-child(odd) {
+    background-color: #f5fffa; /* Verde claro */
+}
+
+/* Alterando a cor do hover para linhas da tabela */
+tr:hover {
+    background-color: #dcdcdc; /* Cor cinza para quando passar o mouse */
+}
+
+/* Estilo para o gráfico */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-container,
+    .chart-container {
+        width: 80%;
+    }
+}

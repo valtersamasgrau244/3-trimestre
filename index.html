@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico da Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resultados da Pesquisa</h1>
+        <p class="subtitle">Confira as preferências dos participantes em diferentes categorias.</p>
+    </header>
+
+    <section class="content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Redes Sociais</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Jogos Eletrônicos</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Esportes</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
